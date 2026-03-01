@@ -2,6 +2,7 @@ import java.io.IOException;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
+import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
@@ -56,6 +57,19 @@ public class WordCount extends Configured implements Tool
     public static void main(String[] args) throws Exception
     {
         Configuration conf = new Configuration();
+        
+        // Add code to remove output before running MapReduce job
+        Path output = new Path(args[1]);
+
+        try (FileSystem fs = output.getFileSystem(conf)) {
+            if (fs.exists(output)) {
+                // recursive = true deletes non-empty directories
+                boolean deleted = fs.delete(output, true);
+                System.out.println("Deleted " + output + ": " + deleted);
+            } else {
+                System.out.println("Path does not exist: " + output);
+            }
+        }
 
         int res = ToolRunner.run(conf, new WordCount(), args);
 
@@ -84,3 +98,4 @@ public class WordCount extends Configured implements Tool
         return job.waitForCompletion(true) ? 0 : 1;
     }
 }
+

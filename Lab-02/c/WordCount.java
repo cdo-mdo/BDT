@@ -2,6 +2,7 @@ import java.io.IOException;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
+import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
@@ -26,12 +27,19 @@ public class WordCount extends Configured implements Tool
         private Text word = new Text();
 
         @Override
-        public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException
-        {
-            for (String token : value.toString().split("\\s+"))
-            {
-                word.set(token);
-                context.write(word, one);
+        public void map(LongWritable key, Text value, Context context)
+                throws IOException, InterruptedException {
+
+            String line = value.toString();
+            String[] tokens = line.split("\\s+");
+
+            for (String token : tokens) {
+                String cleanWord = token.replaceAll("[^a-zA-Z]", "").toLowerCase();
+
+                if (cleanWord.equals("hadoop") || cleanWord.equals("java")) {
+                    word.set(cleanWord);
+                    context.write(word, one);
+                }
             }
         }
     }
@@ -56,6 +64,19 @@ public class WordCount extends Configured implements Tool
     public static void main(String[] args) throws Exception
     {
         Configuration conf = new Configuration();
+        
+        // Add code to remove output before running MapReduce job
+        Path output = new Path(args[1]);
+
+        try (FileSystem fs = output.getFileSystem(conf)) {
+            if (fs.exists(output)) {
+                // recursive = true deletes non-empty directories
+                boolean deleted = fs.delete(output, true);
+                System.out.println("Deleted " + output + ": " + deleted);
+            } else {
+                System.out.println("Path does not exist: " + output);
+            }
+        }
 
         int res = ToolRunner.run(conf, new WordCount(), args);
 
@@ -77,6 +98,9 @@ public class WordCount extends Configured implements Tool
 
         job.setInputFormatClass(TextInputFormat.class);
         job.setOutputFormatClass(TextOutputFormat.class);
+        
+        // Run job with 2 reducers
+        job.setNumReduceTasks(2);
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
@@ -84,3 +108,4 @@ public class WordCount extends Configured implements Tool
         return job.waitForCompletion(true) ? 0 : 1;
     }
 }
+

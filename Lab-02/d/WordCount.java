@@ -1,7 +1,9 @@
 import java.io.IOException;
+import java.util.StringTokenizer;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
+import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
@@ -28,9 +30,13 @@ public class WordCount extends Configured implements Tool
         @Override
         public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException
         {
-            for (String token : value.toString().split("\\s+"))
-            {
-                word.set(token);
+            // Convert line to lowercase (case-insensitive)
+            String line = value.toString().toLowerCase();
+
+            StringTokenizer tokenizer = new StringTokenizer(line);
+
+            while (tokenizer.hasMoreTokens()) {
+                word.set(tokenizer.nextToken());
                 context.write(word, one);
             }
         }
@@ -39,6 +45,7 @@ public class WordCount extends Configured implements Tool
     public static class WordCountReducer extends Reducer<Text, IntWritable, Text, IntWritable>
     {
         private IntWritable result = new IntWritable();
+        private static final int MIN_COUNT = 25;
 
         @Override
         public void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException
@@ -48,14 +55,31 @@ public class WordCount extends Configured implements Tool
             {
                 sum += val.get();
             }
-            result.set(sum);
-            context.write(key, result);
+            
+            // Only output words appearing at least 25 times
+            if (sum >= MIN_COUNT) {
+                result.set(sum);
+                context.write(key, result);
+            }
         }
     }
 
     public static void main(String[] args) throws Exception
     {
         Configuration conf = new Configuration();
+        
+        // Add code to remove output before running MapReduce job
+        Path output = new Path(args[1]);
+
+        try (FileSystem fs = output.getFileSystem(conf)) {
+            if (fs.exists(output)) {
+                // recursive = true deletes non-empty directories
+                boolean deleted = fs.delete(output, true);
+                System.out.println("Deleted " + output + ": " + deleted);
+            } else {
+                System.out.println("Path does not exist: " + output);
+            }
+        }
 
         int res = ToolRunner.run(conf, new WordCount(), args);
 
@@ -77,6 +101,9 @@ public class WordCount extends Configured implements Tool
 
         job.setInputFormatClass(TextInputFormat.class);
         job.setOutputFormatClass(TextOutputFormat.class);
+        
+        // Run job with 2 reducers
+        job.setNumReduceTasks(2);
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
@@ -84,3 +111,4 @@ public class WordCount extends Configured implements Tool
         return job.waitForCompletion(true) ? 0 : 1;
     }
 }
+

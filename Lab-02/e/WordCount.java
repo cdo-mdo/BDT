@@ -38,18 +38,26 @@ public class WordCount extends Configured implements Tool
 
     public static class WordCountReducer extends Reducer<Text, IntWritable, Text, IntWritable>
     {
-        private IntWritable result = new IntWritable();
+        private int distinctCount;
 
         @Override
-        public void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException
-        {
-            int sum = 0;
-            for (IntWritable val : values)
-            {
-                sum += val.get();
-            }
-            result.set(sum);
-            context.write(key, result);
+        protected void setup(Context context)
+                throws IOException, InterruptedException {
+            distinctCount = 0;   // init once per reducer task
+        }
+
+        @Override
+        public void reduce(Text key, Iterable<IntWritable> values, Context context)
+                throws IOException, InterruptedException {
+            // each unique key arrives here once
+            distinctCount++;
+        }
+
+        @Override
+        protected void cleanup(Context context)
+                throws IOException, InterruptedException {
+            // write once at the end of this reducer task
+            context.write(new Text("Distinct Words Count:"), new IntWritable(distinctCount));
         }
     }
 
