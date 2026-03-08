@@ -1,0 +1,119 @@
+Script started on Sun 08 Mar 2026 08:09:49 AM PDT
+]0;cloudera@quickstart:~/workspace/AveTemp-4
+[?1034h[cloudera@quickstart AveTemp-4]$ exit
+hadoop fs -cat /user/cloudera/output4/part-r*
+[9Pls /user/cloudera/output4
+jar /home/cloudera/Desktop/AveTemp4.jar input4 output4
+[8Pfs -put /home/cloudera/NCDC-Weather.txt input4
+mkdir input4
+mkdir: `input4': File exists
+]0;cloudera@quickstart:~/workspace/AveTemp-4
+[cloudera@quickstart AveTemp-4]$ hadoop fs -mkdir input4
+exit
+hadoop fs -cat /user/cloudera/output4/part-r*
+[9Pls /user/cloudera/output4
+jar /home/cloudera/Desktop/AveTemp4.jar input4 output4
+[8Pfs -put /home/cloudera/NCDC-Weather.txt input4
+put: `input4/NCDC-Weather.txt': File exists
+]0;cloudera@quickstart:~/workspace/AveTemp-4
+[cloudera@quickstart AveTemp-4]$ hadoop fs -put /home/cloudera/NCDC-Weather.txt input4
+mkdir input4
+exit
+hadoop fs -cat /user/cloudera/output4/part-r*
+[9Pls /user/cloudera/output4
+jar /home/cloudera/Desktop/AveTemp4.jar input4 output4
+Deleted output4: true
+26/03/08 08:10:21 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+26/03/08 08:10:23 INFO input.FileInputFormat: Total input paths to process : 1
+26/03/08 08:10:24 INFO mapreduce.JobSubmitter: number of splits:1
+26/03/08 08:10:24 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1771294993280_0022
+26/03/08 08:10:24 INFO impl.YarnClientImpl: Submitted application application_1771294993280_0022
+26/03/08 08:10:24 INFO mapreduce.Job: The url to track the job: http://quickstart.cloudera:8088/proxy/application_1771294993280_0022/
+26/03/08 08:10:24 INFO mapreduce.Job: Running job: job_1771294993280_0022
+26/03/08 08:10:34 INFO mapreduce.Job: Job job_1771294993280_0022 running in uber mode : false
+26/03/08 08:10:34 INFO mapreduce.Job:  map 0% reduce 0%
+26/03/08 08:10:42 INFO mapreduce.Job:  map 100% reduce 0%
+26/03/08 08:10:50 INFO mapreduce.Job:  map 100% reduce 100%
+26/03/08 08:10:51 INFO mapreduce.Job: Job job_1771294993280_0022 completed successfully
+26/03/08 08:10:51 INFO mapreduce.Job: Counters: 49
+	File System Counters
+		FILE: Number of bytes read=101
+		FILE: Number of bytes written=288835
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1791179
+		HDFS: Number of bytes written=89
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=5922
+		Total time spent by all reduces in occupied slots (ms)=5388
+		Total time spent by all map tasks (ms)=5922
+		Total time spent by all reduce tasks (ms)=5388
+		Total vcore-milliseconds taken by all map tasks=5922
+		Total vcore-milliseconds taken by all reduce tasks=5388
+		Total megabyte-milliseconds taken by all map tasks=6064128
+		Total megabyte-milliseconds taken by all reduce tasks=5517312
+	Map-Reduce Framework
+		Map input records=13137
+		Map output records=5
+		Map output bytes=85
+		Map output materialized bytes=101
+		Input split bytes=134
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=5
+		Reduce shuffle bytes=101
+		Reduce input records=5
+		Reduce output records=5
+		Spilled Records=10
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=115
+		CPU time spent (ms)=1970
+		Physical memory (bytes) snapshot=426770432
+		Virtual memory (bytes) snapshot=5558857728
+		Total committed heap usage (bytes)=338165760
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1791045
+	File Output Format Counters 
+		Bytes Written=89
+]0;cloudera@quickstart:~/workspace/AveTemp-4
+[cloudera@quickstart AveTemp-4]$ hadoop jar /home/cloudera/Desktop/AveTemp4.jar input4 output4
+[8Pfs -put /home/cloudera/NCDC-Weather.txt input4
+mkdir input4
+exit
+hadoop fs -cat /user/cloudera/output4/part-r*
+[9Pls /user/cloudera/output4
+Found 2 items
+-rw-r--r--   1 cloudera cloudera          0 2026-03-08 08:10 /user/cloudera/output4/_SUCCESS
+-rw-r--r--   1 cloudera cloudera         89 2026-03-08 08:10 /user/cloudera/output4/part-r-00000
+]0;cloudera@quickstart:~/workspace/AveTemp-4
+[cloudera@quickstart AveTemp-4]$ hadoop fs -ls /user/cloudera/output4
+jar /home/cloudera/Desktop/AveTemp4.jar input4 output4
+[8Pfs -put /home/cloudera/NCDC-Weather.txt input4
+mkdir input4
+exit
+hadoop fs -cat /user/cloudera/output4/part-r*
+2018	2.6
+1950	30.46666666666667
+1949	9.45
+1902	2.1659558263518717
+1901	4.669850700792205
+]0;cloudera@quickstart:~/workspace/AveTemp-4
+[cloudera@quickstart AveTemp-4]$ exit
+exit
+Script done on Sun 08 Mar 2026 08:11:16 AM PDT

@@ -1,0 +1,104 @@
+Script started on Sun 08 Mar 2026 08:42:31 AM PDT
+hadoop fs -mkdir input5
+hadoop fs -put /home/cloudera/NCDC-Weather.txt input5
+hadoop jar /home/cloudera/Desktop/AveTemp5.jar input5 output5
+hadoop fs -ls /user/cloudera/output5
+hadoop fs -cat /user/cloudera/output5/part*
+exit0;cloudera@quickstart:~/workspace/AveTemp-5?1034h[cloudera@quickstart AveTemp-5]$ hadoop fs -mkdir input5
+mkdir: `input5': File exists
+0;cloudera@quickstart:~/workspace/AveTemp-5[cloudera@quickstart AveTemp-5]$ hadoop fs -put /home/cloudera/NCDC-Weather.txt input5
+put: `input5/NCDC-Weather.txt': File exists
+0;cloudera@quickstart:~/workspace/AveTemp-5[cloudera@quickstart AveTemp-5]$ hadoop jar /home/cloudera/Desktop/AveTemp5.jar input5 output5
+Deleted output5: true
+26/03/08 08:42:46 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+26/03/08 08:42:48 INFO input.FileInputFormat: Total input paths to process : 1
+26/03/08 08:42:48 WARN hdfs.DFSClient: Caught exception
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1252)
+	at java.lang.Thread.join(Thread.java:1326)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.closeResponder(DFSOutputStream.java:967)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.endBlock(DFSOutputStream.java:705)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:894)
+26/03/08 08:42:48 INFO mapreduce.JobSubmitter: number of splits:1
+26/03/08 08:42:49 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1771294993280_0025
+26/03/08 08:42:49 INFO impl.YarnClientImpl: Submitted application application_1771294993280_0025
+26/03/08 08:42:49 INFO mapreduce.Job: The url to track the job: http://quickstart.cloudera:8088/proxy/application_1771294993280_0025/
+26/03/08 08:42:49 INFO mapreduce.Job: Running job: job_1771294993280_0025
+26/03/08 08:42:59 INFO mapreduce.Job: Job job_1771294993280_0025 running in uber mode : false
+26/03/08 08:42:59 INFO mapreduce.Job:  map 0% reduce 0%
+26/03/08 08:43:09 INFO mapreduce.Job:  map 100% reduce 0%
+26/03/08 08:43:22 INFO mapreduce.Job:  map 100% reduce 50%
+26/03/08 08:43:23 INFO mapreduce.Job:  map 100% reduce 100%
+26/03/08 08:43:23 INFO mapreduce.Job: Job job_1771294993280_0025 completed successfully
+26/03/08 08:43:23 INFO mapreduce.Job: Counters: 49
+	File System Counters
+		FILE: Number of bytes read=107
+		FILE: Number of bytes written=433676
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1791179
+		HDFS: Number of bytes written=89
+		HDFS: Number of read operations=9
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=4
+	Job Counters
+		Launched map tasks=1
+		Launched reduce tasks=2
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=7406
+		Total time spent by all reduces in occupied slots (ms)=19540
+		Total time spent by all map tasks (ms)=7406
+		Total time spent by all reduce tasks (ms)=19540
+		Total vcore-milliseconds taken by all map tasks=7406
+		Total vcore-milliseconds taken by all reduce tasks=19540
+		Total megabyte-milliseconds taken by all map tasks=7583744
+		Total megabyte-milliseconds taken by all reduce tasks=20008960
+	Map-Reduce Framework
+		Map input records=13137
+		Map output records=5
+		Map output bytes=85
+		Map output materialized bytes=107
+		Input split bytes=134
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=5
+		Reduce shuffle bytes=107
+		Reduce input records=5
+		Reduce output records=5
+		Spilled Records=10
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=262
+		CPU time spent (ms)=3830
+		Physical memory (bytes) snapshot=597463040
+		Virtual memory (bytes) snapshot=8342339584
+		Total committed heap usage (bytes)=510132224
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters
+		Bytes Read=1791045
+	File Output Format Counters
+		Bytes Written=89
+0;cloudera@quickstart:~/workspace/AveTemp-5[cloudera@quickstart AveTemp-5]$ hadoop fs -ls /user/cloudera/output5
+Found 3 items
+-rw-r--r--   1 cloudera cloudera	  0 2026-03-08 08:43 /user/cloudera/output5/_SUCCESS
+-rw-r--r--   1 cloudera cloudera	 47 2026-03-08 08:43 /user/cloudera/output5/part-r-00000
+-rw-r--r--   1 cloudera cloudera	 42 2026-03-08 08:43 /user/cloudera/output5/part-r-00001
+0;cloudera@quickstart:~/workspace/AveTemp-5[cloudera@quickstart AveTemp-5]$ hadoop fs -cat /user/cloudera/output5/part*
+1902	2.1659558263518717
+1901	4.669850700792205
+2018	2.6
+1950	30.46666666666667
+1949	9.45
+0;cloudera@quickstart:~/workspace/AveTemp-5[cloudera@quickstart AveTemp-5]$ exit
+exit
+
+Script done on Sun 08 Mar 2026 08:43:35 AM PDT
