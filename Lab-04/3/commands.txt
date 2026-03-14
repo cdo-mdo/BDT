@@ -1,0 +1,45 @@
+Script started on Sat 14 Mar 2026 12:39:47 PM PDT
+0;cloudera@quickstart:~/workspace/AvroMaxTemp?1034h[cloudera@quickstart AvroMaxTemp]$ sh avro-tools-script.sh
+run avro-tools
+avro-tools tojson output/part-r-00000.avro
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.metrics2.lib.MutableMetricsFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+{"year":1901,"maxTemp":-5.6,"stationId":"029070-99999"}
+{"year":1902,"maxTemp":2.2,"stationId":"029810-99999"}
+{"year":1949,"maxTemp":11.1,"stationId":"012650-99999"}
+{"year":1950,"maxTemp":2.2,"stationId":"011990-99999"}
+{"year":2018,"maxTemp":25.0,"stationId":"011990-99999"}
+avro-tools tojson --pretty output/part-r-00000.avro
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.metrics2.lib.MutableMetricsFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+{
+  "year" : 1901,
+  "maxTemp" : -5.6,
+  "stationId" : "029070-99999"
+}
+{
+  "year" : 1902,
+  "maxTemp" : 2.2,
+  "stationId" : "029810-99999"
+}
+{
+  "year" : 1949,
+  "maxTemp" : 11.1,
+  "stationId" : "012650-99999"
+}
+{
+  "year" : 1950,
+  "maxTemp" : 2.2,
+  "stationId" : "011990-99999"
+}
+{
+  "year" : 2018,
+  "maxTemp" : 25.0,
+  "stationId" : "011990-99999"
+}
+0;cloudera@quickstart:~/workspace/AvroMaxTemp[cloudera@quickstart AvroMaxTemp]$ exit
+exit
+
+Script done on Sat 14 Mar 2026 12:39:59 PM PDT

@@ -1,0 +1,9 @@
+{
+    "type": "record",
+    "name": "YearMaxTempStation",
+    "fields": [
+        {"name": "year", "type": "int"},
+        {"name": "maxTemp", "type": "float"},
+        {"name": "stationId", "type": "string"}
+    ]
+}

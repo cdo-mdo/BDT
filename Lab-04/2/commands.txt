@@ -1,0 +1,99 @@
+Script started on Sat 14 Mar 2026 12:34:24 PM PDT
+0;cloudera@quickstart:~/workspace/AvroStationTempYear?1034h[cloudera@quickstart AvroStationTempYear]$ sh avro-tools-script.sh
+run avro-tools
+avro-tools tojson output/part-r-00000.avro
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.metrics2.lib.MutableMetricsFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+{"stationId":"011990-99999","temperature":25,"year":2018}
+{"stationId":"011990-99999","temperature":2,"year":1950}
+{"stationId":"011990-99999","temperature":2,"year":2018}
+{"stationId":"011990-99999","temperature":0,"year":1950}
+{"stationId":"011990-99999","temperature":-11,"year":1950}
+{"stationId":"012650-99999","temperature":11,"year":1949}
+{"stationId":"012650-99999","temperature":7,"year":1949}
+{"stationId":"029070-99999","temperature":-5,"year":1901}
+{"stationId":"029070-99999","temperature":-6,"year":1901}
+{"stationId":"029070-99999","temperature":-7,"year":1901}
+{"stationId":"029070-99999","temperature":-9,"year":1901}
+{"stationId":"029810-99999","temperature":2,"year":1902}
+{"stationId":"029810-99999","temperature":1,"year":1902}
+{"stationId":"029810-99999","temperature":0,"year":1902}
+avro-tools tojson --pretty output/part-r-00000.avro
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.metrics2.lib.MutableMetricsFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+{
+  "stationId" : "011990-99999",
+  "temperature" : 25,
+  "year" : 2018
+}
+{
+  "stationId" : "011990-99999",
+  "temperature" : 2,
+  "year" : 1950
+}
+{
+  "stationId" : "011990-99999",
+  "temperature" : 2,
+  "year" : 2018
+}
+{
+  "stationId" : "011990-99999",
+  "temperature" : 0,
+  "year" : 1950
+}
+{
+  "stationId" : "011990-99999",
+  "temperature" : -11,
+  "year" : 1950
+}
+{
+  "stationId" : "012650-99999",
+  "temperature" : 11,
+  "year" : 1949
+}
+{
+  "stationId" : "012650-99999",
+  "temperature" : 7,
+  "year" : 1949
+}
+{
+  "stationId" : "029070-99999",
+  "temperature" : -5,
+  "year" : 1901
+}
+{
+  "stationId" : "029070-99999",
+  "temperature" : -6,
+  "year" : 1901
+}
+{
+  "stationId" : "029070-99999",
+  "temperature" : -7,
+  "year" : 1901
+}
+{
+  "stationId" : "029070-99999",
+  "temperature" : -9,
+  "year" : 1901
+}
+{
+  "stationId" : "029810-99999",
+  "temperature" : 2,
+  "year" : 1902
+}
+{
+  "stationId" : "029810-99999",
+  "temperature" : 1,
+  "year" : 1902
+}
+{
+  "stationId" : "029810-99999",
+  "temperature" : 0,
+  "year" : 1902
+}
+0;cloudera@quickstart:~/workspace/AvroStationTempYear[cloudera@quickstart AvroStationTempYear]$ exit
+exit
+
+Script done on Sat 14 Mar 2026 12:34:35 PM PDT

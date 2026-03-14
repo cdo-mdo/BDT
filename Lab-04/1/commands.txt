@@ -1,0 +1,1703 @@
+Script started on Sat 14 Mar 2026 07:52:12 AM PDT
+0;cloudera@quickstart:~/workspace/AvroWordCount?1034h[cloudera@quickstart AvroWordCount]$ avro-tools tojson output/part-r-00000.avro
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.metrics2.lib.MutableMetricsFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+{"key":"","value":38}
+{"key":"(FTP","value":5}
+{"key":"(How","value":5}
+{"key":"(JNI)","value":5}
+{"key":"(an","value":5}
+{"key":"(and","value":4}
+{"key":"(it","value":5}
+{"key":"(like","value":10}
+{"key":"(since","value":5}
+{"key":"API","value":10}
+{"key":"API,","value":5}
+{"key":"API.","value":5}
+{"key":"Again,","value":5}
+{"key":"Apache","value":5}
+{"key":"But","value":4}
+{"key":"C","value":15}
+{"key":"Context","value":5}
+{"key":"FTP,","value":5}
+{"key":"FileSystem","value":10}
+{"key":"For","value":5}
+{"key":"Going","value":5}
+{"key":"HADOOP_CLASSPATH,","value":4}
+{"key":"HDFS,","value":10}
+{"key":"Hadoop","value":63}
+{"key":"Here","value":5}
+{"key":"In","value":15}
+{"key":"IntWritable","value":5}
+{"key":"IntWritable.","value":5}
+{"key":"Integer).","value":5}
+{"key":"Interface","value":5}
+{"key":"It","value":5}
+{"key":"Java","value":80}
+{"key":"Java,","value":5}
+{"key":"Java.","value":5}
+{"key":"Job.","value":5}
+{"key":"Long,","value":5}
+{"key":"LongWritable,","value":5}
+{"key":"MR","value":1}
+{"key":"MapReduce","value":24}
+{"key":"Mapper","value":5}
+{"key":"MaxTemperatureReducer.","value":5}
+{"key":"Native","value":5}
+{"key":"OK.","value":5}
+{"key":"Rather","value":5}
+{"key":"Reducer","value":5}
+{"key":"Reducer.","value":5}
+{"key":"S3","value":5}
+{"key":"S3,","value":5}
+{"key":"Streaming","value":10}
+{"key":"String),","value":5}
+{"key":"String,","value":5}
+{"key":"Text","value":15}
+{"key":"The","value":59}
+{"key":"There","value":5}
+{"key":"These","value":10}
+{"key":"To","value":4}
+{"key":"Unix","value":5}
+{"key":"We","value":10}
+{"key":"WebHDFS","value":5}
+{"key":"When","value":4}
+{"key":"You","value":5}
+{"key":"a","value":103}
+{"key":"access","value":10}
+{"key":"accessing","value":5}
+{"key":"add","value":4}
+{"key":"adds","value":4}
+{"key":"air","value":5}
+{"key":"allows","value":5}
+{"key":"alone","value":5}
+{"key":"also","value":10}
+{"key":"always","value":5}
+{"key":"amount","value":5}
+{"key":"an","value":34}
+{"key":"and","value":74}
+{"key":"any","value":15}
+{"key":"application","value":9}
+{"key":"application,","value":5}
+{"key":"are","value":49}
+{"key":"argument,","value":4}
+{"key":"as","value":34}
+{"key":"back","value":5}
+{"key":"basic","value":5}
+{"key":"be","value":10}
+{"key":"between","value":10}
+{"key":"binary","value":5}
+{"key":"boundaries","value":5}
+{"key":"briefly","value":5}
+{"key":"built-in","value":5}
+{"key":"but","value":19}
+{"key":"call","value":5}
+{"key":"called","value":9}
+{"key":"can","value":30}
+{"key":"case,","value":10}
+{"key":"change","value":5}
+{"key":"class","value":15}
+{"key":"class,","value":5}
+{"key":"class.","value":4}
+{"key":"classes","value":4}
+{"key":"classname","value":4}
+{"key":"classpath","value":4}
+{"key":"classpath,","value":4}
+{"key":"client.","value":5}
+{"key":"clients","value":5}
+{"key":"code","value":5}
+{"key":"columns","value":5}
+{"key":"combiner","value":20}
+{"key":"command","value":8}
+{"key":"commonly","value":5}
+{"key":"configuration,","value":4}
+{"key":"considering","value":5}
+{"key":"containing","value":5}
+{"key":"contrast","value":5}
+{"key":"convert","value":5}
+{"key":"corresponds","value":5}
+{"key":"could","value":5}
+{"key":"cut","value":5}
+{"key":"data","value":5}
+{"key":"defined","value":14}
+{"key":"dependencies)","value":4}
+{"key":"described","value":5}
+{"key":"despite","value":5}
+{"key":"different","value":10}
+{"key":"directory","value":5}
+{"key":"discussed","value":5}
+{"key":"distribution.","value":5}
+{"key":"doesn't","value":2}
+{"key":"doesnï¿½t","value":3}
+{"key":"down","value":5}
+{"key":"each","value":10}
+{"key":"ensures","value":5}
+{"key":"environment","value":4}
+{"key":"etc.),","value":5}
+{"key":"example,","value":10}
+{"key":"existing","value":5}
+{"key":"extract","value":5}
+{"key":"far","value":5}
+{"key":"features","value":5}
+{"key":"file,","value":5}
+{"key":"filesystem","value":30}
+{"key":"filesystem).","value":5}
+{"key":"filesystem.","value":5}
+{"key":"filesystems","value":5}
+{"key":"find","value":10}
+{"key":"first","value":4}
+{"key":"for","value":40}
+{"key":"formal","value":5}
+{"key":"found","value":5}
+{"key":"four","value":5}
+{"key":"framework","value":5}
+{"key":"from","value":15}
+{"key":"function","value":30}
+{"key":"function.","value":10}
+{"key":"functions","value":5}
+{"key":"generic","value":5}
+{"key":"group","value":5}
+{"key":"group,","value":5}
+{"key":"group.","value":10}
+{"key":"hadoop","value":12}
+{"key":"have","value":20}
+{"key":"hdfs.h,","value":5}
+{"key":"header","value":5}
+{"key":"help","value":5}
+{"key":"if","value":10}
+{"key":"implementation","value":5}
+{"key":"in","value":60}
+{"key":"in.","value":5}
+{"key":"include","value":5}
+{"key":"indicates","value":5}
+{"key":"input","value":30}
+{"key":"input,","value":5}
+{"key":"instance","value":5}
+{"key":"integer","value":5}
+{"key":"integer).","value":5}
+{"key":"interactions","value":5}
+{"key":"interested","value":5}
+{"key":"interface","value":15}
+{"key":"interfaces","value":10}
+{"key":"into","value":10}
+{"key":"invoked","value":4}
+{"key":"is","value":104}
+{"key":"it","value":34}
+{"key":"it?","value":5}
+{"key":"iterates","value":5}
+{"key":"iterator","value":5}
+{"key":"its","value":15}
+{"key":"job.","value":5}
+{"key":"just","value":5}
+{"key":"key","value":50}
+{"key":"key),","value":5}
+{"key":"key,","value":10}
+{"key":"key.","value":5}
+{"key":"keys","value":10}
+{"key":"know","value":5}
+{"key":"lags","value":5}
+{"key":"language","value":5}
+{"key":"languages","value":5}
+{"key":"last","value":5}
+{"key":"launches","value":4}
+{"key":"libhdfs","value":5}
+{"key":"libraries","value":4}
+{"key":"library","value":15}
+{"key":"libwebhdfs","value":5}
+{"key":"line","value":10}
+{"key":"lines","value":5}
+{"key":"long","value":5}
+{"key":"machine","value":4}
+{"key":"make","value":5}
+{"key":"many","value":5}
+{"key":"map","value":10}
+{"key":"map()","value":10}
+{"key":"mappers","value":5}
+{"key":"maps.)","value":5}
+{"key":"maximum","value":5}
+{"key":"may","value":5}
+{"key":"mediated","value":5}
+{"key":"method","value":15}
+{"key":"mirrors","value":5}
+{"key":"most","value":10}
+{"key":"moved","value":5}
+{"key":"name","value":5}
+{"key":"need","value":5}
+{"key":"needed","value":5}
+{"key":"network","value":5}
+{"key":"new","value":5}
+{"key":"newer","value":5}
+{"key":"not","value":5}
+{"key":"object","value":5}
+{"key":"of","value":40}
+{"key":"offset,","value":5}
+{"key":"on","value":5}
+{"key":"one,","value":15}
+{"key":"only","value":10}
+{"key":"operations.","value":5}
+{"key":"optimized","value":5}
+{"key":"ordered,","value":5}
+{"key":"org.apache.hadoop.io","value":5}
+{"key":"other","value":15}
+{"key":"output","value":35}
+{"key":"over","value":10}
+{"key":"own","value":5}
+{"key":"package.","value":5}
+{"key":"parameters","value":5}
+{"key":"passed","value":5}
+{"key":"picks","value":8}
+{"key":"present","value":10}
+{"key":"previous","value":10}
+{"key":"process","value":10}
+{"key":"program","value":5}
+{"key":"program,","value":10}
+{"key":"program.","value":10}
+{"key":"provide","value":5}
+{"key":"provided","value":5}
+{"key":"provides","value":20}
+{"key":"quality","value":5}
+{"key":"read","value":5}
+{"key":"reading","value":5}
+{"key":"reason","value":5}
+{"key":"record","value":5}
+{"key":"records","value":5}
+{"key":"reduce","value":25}
+{"key":"reducers,","value":5}
+{"key":"replace","value":5}
+{"key":"run","value":4}
+{"key":"same","value":10}
+{"key":"script","value":4}
+{"key":"section.","value":10}
+{"key":"seen","value":10}
+{"key":"serialization.","value":5}
+{"key":"set","value":10}
+{"key":"shell,","value":5}
+{"key":"shuffled","value":5}
+{"key":"similar","value":5}
+{"key":"similarly","value":5}
+{"key":"since","value":5}
+{"key":"so","value":25}
+{"key":"some","value":10}
+{"key":"specify","value":5}
+{"key":"standard","value":20}
+{"key":"state","value":5}
+{"key":"still","value":5}
+{"key":"store","value":10}
+{"key":"streams","value":5}
+{"key":"substring()","value":5}
+{"key":"supported.","value":5}
+{"key":"tarball","value":5}
+{"key":"temperature","value":25}
+{"key":"text,","value":5}
+{"key":"than","value":10}
+{"key":"that","value":50}
+{"key":"the","value":292}
+{"key":"their","value":4}
+{"key":"them","value":5}
+{"key":"then","value":5}
+{"key":"this","value":30}
+{"key":"through","value":5}
+{"key":"time","value":5}
+{"key":"to","value":107}
+{"key":"to.","value":5}
+{"key":"too.","value":4}
+{"key":"tools","value":10}
+{"key":"type","value":5}
+{"key":"type,","value":5}
+{"key":"types","value":10}
+{"key":"types,","value":5}
+{"key":"typically","value":10}
+{"key":"underlying","value":5}
+{"key":"up","value":4}
+{"key":"up.","value":4}
+{"key":"use","value":20}
+{"key":"used","value":11}
+{"key":"uses","value":15}
+{"key":"using","value":24}
+{"key":"value","value":20}
+{"key":"value,","value":5}
+{"key":"value.","value":5}
+{"key":"variable","value":4}
+{"key":"very","value":5}
+{"key":"virtual","value":4}
+{"key":"was","value":5}
+{"key":"we","value":50}
+{"key":"we've","value":1}
+{"key":"weï¿½ve","value":3}
+{"key":"where","value":5}
+{"key":"whether","value":5}
+{"key":"which","value":9}
+{"key":"will","value":5}
+{"key":"with","value":24}
+{"key":"work","value":5}
+{"key":"works","value":5}
+{"key":"worth","value":5}
+{"key":"wrapped","value":5}
+{"key":"write","value":30}
+{"key":"written","value":10}
+{"key":"year","value":5}
+{"key":"year,","value":5}
+{"key":"years,","value":5}
+{"key":"you","value":25}
+{"key":"your","value":24}
+0;cloudera@quickstart:~/workspace/AvroWordCount[cloudera@quickstart AvroWordCount]$ avro-tools tojson -pretty output/part-r-00000.avro
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.metrics2.lib.MutableMetricsFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+{
+  "key" : "",
+  "value" : 38
+}
+{
+  "key" : "(FTP",
+  "value" : 5
+}
+{
+  "key" : "(How",
+  "value" : 5
+}
+{
+  "key" : "(JNI)",
+  "value" : 5
+}
+{
+  "key" : "(an",
+  "value" : 5
+}
+{
+  "key" : "(and",
+  "value" : 4
+}
+{
+  "key" : "(it",
+  "value" : 5
+}
+{
+  "key" : "(like",
+  "value" : 10
+}
+{
+  "key" : "(since",
+  "value" : 5
+}
+{
+  "key" : "API",
+  "value" : 10
+}
+{
+  "key" : "API,",
+  "value" : 5
+}
+{
+  "key" : "API.",
+  "value" : 5
+}
+{
+  "key" : "Again,",
+  "value" : 5
+}
+{
+  "key" : "Apache",
+  "value" : 5
+}
+{
+  "key" : "But",
+  "value" : 4
+}
+{
+  "key" : "C",
+  "value" : 15
+}
+{
+  "key" : "Context",
+  "value" : 5
+}
+{
+  "key" : "FTP,",
+  "value" : 5
+}
+{
+  "key" : "FileSystem",
+  "value" : 10
+}
+{
+  "key" : "For",
+  "value" : 5
+}
+{
+  "key" : "Going",
+  "value" : 5
+}
+{
+  "key" : "HADOOP_CLASSPATH,",
+  "value" : 4
+}
+{
+  "key" : "HDFS,",
+  "value" : 10
+}
+{
+  "key" : "Hadoop",
+  "value" : 63
+}
+{
+  "key" : "Here",
+  "value" : 5
+}
+{
+  "key" : "In",
+  "value" : 15
+}
+{
+  "key" : "IntWritable",
+  "value" : 5
+}
+{
+  "key" : "IntWritable.",
+  "value" : 5
+}
+{
+  "key" : "Integer).",
+  "value" : 5
+}
+{
+  "key" : "Interface",
+  "value" : 5
+}
+{
+  "key" : "It",
+  "value" : 5
+}
+{
+  "key" : "Java",
+  "value" : 80
+}
+{
+  "key" : "Java,",
+  "value" : 5
+}
+{
+  "key" : "Java.",
+  "value" : 5
+}
+{
+  "key" : "Job.",
+  "value" : 5
+}
+{
+  "key" : "Long,",
+  "value" : 5
+}
+{
+  "key" : "LongWritable,",
+  "value" : 5
+}
+{
+  "key" : "MR",
+  "value" : 1
+}
+{
+  "key" : "MapReduce",
+  "value" : 24
+}
+{
+  "key" : "Mapper",
+  "value" : 5
+}
+{
+  "key" : "MaxTemperatureReducer.",
+  "value" : 5
+}
+{
+  "key" : "Native",
+  "value" : 5
+}
+{
+  "key" : "OK.",
+  "value" : 5
+}
+{
+  "key" : "Rather",
+  "value" : 5
+}
+{
+  "key" : "Reducer",
+  "value" : 5
+}
+{
+  "key" : "Reducer.",
+  "value" : 5
+}
+{
+  "key" : "S3",
+  "value" : 5
+}
+{
+  "key" : "S3,",
+  "value" : 5
+}
+{
+  "key" : "Streaming",
+  "value" : 10
+}
+{
+  "key" : "String),",
+  "value" : 5
+}
+{
+  "key" : "String,",
+  "value" : 5
+}
+{
+  "key" : "Text",
+  "value" : 15
+}
+{
+  "key" : "The",
+  "value" : 59
+}
+{
+  "key" : "There",
+  "value" : 5
+}
+{
+  "key" : "These",
+  "value" : 10
+}
+{
+  "key" : "To",
+  "value" : 4
+}
+{
+  "key" : "Unix",
+  "value" : 5
+}
+{
+  "key" : "We",
+  "value" : 10
+}
+{
+  "key" : "WebHDFS",
+  "value" : 5
+}
+{
+  "key" : "When",
+  "value" : 4
+}
+{
+  "key" : "You",
+  "value" : 5
+}
+{
+  "key" : "a",
+  "value" : 103
+}
+{
+  "key" : "access",
+  "value" : 10
+}
+{
+  "key" : "accessing",
+  "value" : 5
+}
+{
+  "key" : "add",
+  "value" : 4
+}
+{
+  "key" : "adds",
+  "value" : 4
+}
+{
+  "key" : "air",
+  "value" : 5
+}
+{
+  "key" : "allows",
+  "value" : 5
+}
+{
+  "key" : "alone",
+  "value" : 5
+}
+{
+  "key" : "also",
+  "value" : 10
+}
+{
+  "key" : "always",
+  "value" : 5
+}
+{
+  "key" : "amount",
+  "value" : 5
+}
+{
+  "key" : "an",
+  "value" : 34
+}
+{
+  "key" : "and",
+  "value" : 74
+}
+{
+  "key" : "any",
+  "value" : 15
+}
+{
+  "key" : "application",
+  "value" : 9
+}
+{
+  "key" : "application,",
+  "value" : 5
+}
+{
+  "key" : "are",
+  "value" : 49
+}
+{
+  "key" : "argument,",
+  "value" : 4
+}
+{
+  "key" : "as",
+  "value" : 34
+}
+{
+  "key" : "back",
+  "value" : 5
+}
+{
+  "key" : "basic",
+  "value" : 5
+}
+{
+  "key" : "be",
+  "value" : 10
+}
+{
+  "key" : "between",
+  "value" : 10
+}
+{
+  "key" : "binary",
+  "value" : 5
+}
+{
+  "key" : "boundaries",
+  "value" : 5
+}
+{
+  "key" : "briefly",
+  "value" : 5
+}
+{
+  "key" : "built-in",
+  "value" : 5
+}
+{
+  "key" : "but",
+  "value" : 19
+}
+{
+  "key" : "call",
+  "value" : 5
+}
+{
+  "key" : "called",
+  "value" : 9
+}
+{
+  "key" : "can",
+  "value" : 30
+}
+{
+  "key" : "case,",
+  "value" : 10
+}
+{
+  "key" : "change",
+  "value" : 5
+}
+{
+  "key" : "class",
+  "value" : 15
+}
+{
+  "key" : "class,",
+  "value" : 5
+}
+{
+  "key" : "class.",
+  "value" : 4
+}
+{
+  "key" : "classes",
+  "value" : 4
+}
+{
+  "key" : "classname",
+  "value" : 4
+}
+{
+  "key" : "classpath",
+  "value" : 4
+}
+{
+  "key" : "classpath,",
+  "value" : 4
+}
+{
+  "key" : "client.",
+  "value" : 5
+}
+{
+  "key" : "clients",
+  "value" : 5
+}
+{
+  "key" : "code",
+  "value" : 5
+}
+{
+  "key" : "columns",
+  "value" : 5
+}
+{
+  "key" : "combiner",
+  "value" : 20
+}
+{
+  "key" : "command",
+  "value" : 8
+}
+{
+  "key" : "commonly",
+  "value" : 5
+}
+{
+  "key" : "configuration,",
+  "value" : 4
+}
+{
+  "key" : "considering",
+  "value" : 5
+}
+{
+  "key" : "containing",
+  "value" : 5
+}
+{
+  "key" : "contrast",
+  "value" : 5
+}
+{
+  "key" : "convert",
+  "value" : 5
+}
+{
+  "key" : "corresponds",
+  "value" : 5
+}
+{
+  "key" : "could",
+  "value" : 5
+}
+{
+  "key" : "cut",
+  "value" : 5
+}
+{
+  "key" : "data",
+  "value" : 5
+}
+{
+  "key" : "defined",
+  "value" : 14
+}
+{
+  "key" : "dependencies)",
+  "value" : 4
+}
+{
+  "key" : "described",
+  "value" : 5
+}
+{
+  "key" : "despite",
+  "value" : 5
+}
+{
+  "key" : "different",
+  "value" : 10
+}
+{
+  "key" : "directory",
+  "value" : 5
+}
+{
+  "key" : "discussed",
+  "value" : 5
+}
+{
+  "key" : "distribution.",
+  "value" : 5
+}
+{
+  "key" : "doesn't",
+  "value" : 2
+}
+{
+  "key" : "doesnï¿½t",
+  "value" : 3
+}
+{
+  "key" : "down",
+  "value" : 5
+}
+{
+  "key" : "each",
+  "value" : 10
+}
+{
+  "key" : "ensures",
+  "value" : 5
+}
+{
+  "key" : "environment",
+  "value" : 4
+}
+{
+  "key" : "etc.),",
+  "value" : 5
+}
+{
+  "key" : "example,",
+  "value" : 10
+}
+{
+  "key" : "existing",
+  "value" : 5
+}
+{
+  "key" : "extract",
+  "value" : 5
+}
+{
+  "key" : "far",
+  "value" : 5
+}
+{
+  "key" : "features",
+  "value" : 5
+}
+{
+  "key" : "file,",
+  "value" : 5
+}
+{
+  "key" : "filesystem",
+  "value" : 30
+}
+{
+  "key" : "filesystem).",
+  "value" : 5
+}
+{
+  "key" : "filesystem.",
+  "value" : 5
+}
+{
+  "key" : "filesystems",
+  "value" : 5
+}
+{
+  "key" : "find",
+  "value" : 10
+}
+{
+  "key" : "first",
+  "value" : 4
+}
+{
+  "key" : "for",
+  "value" : 40
+}
+{
+  "key" : "formal",
+  "value" : 5
+}
+{
+  "key" : "found",
+  "value" : 5
+}
+{
+  "key" : "four",
+  "value" : 5
+}
+{
+  "key" : "framework",
+  "value" : 5
+}
+{
+  "key" : "from",
+  "value" : 15
+}
+{
+  "key" : "function",
+  "value" : 30
+}
+{
+  "key" : "function.",
+  "value" : 10
+}
+{
+  "key" : "functions",
+  "value" : 5
+}
+{
+  "key" : "generic",
+  "value" : 5
+}
+{
+  "key" : "group",
+  "value" : 5
+}
+{
+  "key" : "group,",
+  "value" : 5
+}
+{
+  "key" : "group.",
+  "value" : 10
+}
+{
+  "key" : "hadoop",
+  "value" : 12
+}
+{
+  "key" : "have",
+  "value" : 20
+}
+{
+  "key" : "hdfs.h,",
+  "value" : 5
+}
+{
+  "key" : "header",
+  "value" : 5
+}
+{
+  "key" : "help",
+  "value" : 5
+}
+{
+  "key" : "if",
+  "value" : 10
+}
+{
+  "key" : "implementation",
+  "value" : 5
+}
+{
+  "key" : "in",
+  "value" : 60
+}
+{
+  "key" : "in.",
+  "value" : 5
+}
+{
+  "key" : "include",
+  "value" : 5
+}
+{
+  "key" : "indicates",
+  "value" : 5
+}
+{
+  "key" : "input",
+  "value" : 30
+}
+{
+  "key" : "input,",
+  "value" : 5
+}
+{
+  "key" : "instance",
+  "value" : 5
+}
+{
+  "key" : "integer",
+  "value" : 5
+}
+{
+  "key" : "integer).",
+  "value" : 5
+}
+{
+  "key" : "interactions",
+  "value" : 5
+}
+{
+  "key" : "interested",
+  "value" : 5
+}
+{
+  "key" : "interface",
+  "value" : 15
+}
+{
+  "key" : "interfaces",
+  "value" : 10
+}
+{
+  "key" : "into",
+  "value" : 10
+}
+{
+  "key" : "invoked",
+  "value" : 4
+}
+{
+  "key" : "is",
+  "value" : 104
+}
+{
+  "key" : "it",
+  "value" : 34
+}
+{
+  "key" : "it?",
+  "value" : 5
+}
+{
+  "key" : "iterates",
+  "value" : 5
+}
+{
+  "key" : "iterator",
+  "value" : 5
+}
+{
+  "key" : "its",
+  "value" : 15
+}
+{
+  "key" : "job.",
+  "value" : 5
+}
+{
+  "key" : "just",
+  "value" : 5
+}
+{
+  "key" : "key",
+  "value" : 50
+}
+{
+  "key" : "key),",
+  "value" : 5
+}
+{
+  "key" : "key,",
+  "value" : 10
+}
+{
+  "key" : "key.",
+  "value" : 5
+}
+{
+  "key" : "keys",
+  "value" : 10
+}
+{
+  "key" : "know",
+  "value" : 5
+}
+{
+  "key" : "lags",
+  "value" : 5
+}
+{
+  "key" : "language",
+  "value" : 5
+}
+{
+  "key" : "languages",
+  "value" : 5
+}
+{
+  "key" : "last",
+  "value" : 5
+}
+{
+  "key" : "launches",
+  "value" : 4
+}
+{
+  "key" : "libhdfs",
+  "value" : 5
+}
+{
+  "key" : "libraries",
+  "value" : 4
+}
+{
+  "key" : "library",
+  "value" : 15
+}
+{
+  "key" : "libwebhdfs",
+  "value" : 5
+}
+{
+  "key" : "line",
+  "value" : 10
+}
+{
+  "key" : "lines",
+  "value" : 5
+}
+{
+  "key" : "long",
+  "value" : 5
+}
+{
+  "key" : "machine",
+  "value" : 4
+}
+{
+  "key" : "make",
+  "value" : 5
+}
+{
+  "key" : "many",
+  "value" : 5
+}
+{
+  "key" : "map",
+  "value" : 10
+}
+{
+  "key" : "map()",
+  "value" : 10
+}
+{
+  "key" : "mappers",
+  "value" : 5
+}
+{
+  "key" : "maps.)",
+  "value" : 5
+}
+{
+  "key" : "maximum",
+  "value" : 5
+}
+{
+  "key" : "may",
+  "value" : 5
+}
+{
+  "key" : "mediated",
+  "value" : 5
+}
+{
+  "key" : "method",
+  "value" : 15
+}
+{
+  "key" : "mirrors",
+  "value" : 5
+}
+{
+  "key" : "most",
+  "value" : 10
+}
+{
+  "key" : "moved",
+  "value" : 5
+}
+{
+  "key" : "name",
+  "value" : 5
+}
+{
+  "key" : "need",
+  "value" : 5
+}
+{
+  "key" : "needed",
+  "value" : 5
+}
+{
+  "key" : "network",
+  "value" : 5
+}
+{
+  "key" : "new",
+  "value" : 5
+}
+{
+  "key" : "newer",
+  "value" : 5
+}
+{
+  "key" : "not",
+  "value" : 5
+}
+{
+  "key" : "object",
+  "value" : 5
+}
+{
+  "key" : "of",
+  "value" : 40
+}
+{
+  "key" : "offset,",
+  "value" : 5
+}
+{
+  "key" : "on",
+  "value" : 5
+}
+{
+  "key" : "one,",
+  "value" : 15
+}
+{
+  "key" : "only",
+  "value" : 10
+}
+{
+  "key" : "operations.",
+  "value" : 5
+}
+{
+  "key" : "optimized",
+  "value" : 5
+}
+{
+  "key" : "ordered,",
+  "value" : 5
+}
+{
+  "key" : "org.apache.hadoop.io",
+  "value" : 5
+}
+{
+  "key" : "other",
+  "value" : 15
+}
+{
+  "key" : "output",
+  "value" : 35
+}
+{
+  "key" : "over",
+  "value" : 10
+}
+{
+  "key" : "own",
+  "value" : 5
+}
+{
+  "key" : "package.",
+  "value" : 5
+}
+{
+  "key" : "parameters",
+  "value" : 5
+}
+{
+  "key" : "passed",
+  "value" : 5
+}
+{
+  "key" : "picks",
+  "value" : 8
+}
+{
+  "key" : "present",
+  "value" : 10
+}
+{
+  "key" : "previous",
+  "value" : 10
+}
+{
+  "key" : "process",
+  "value" : 10
+}
+{
+  "key" : "program",
+  "value" : 5
+}
+{
+  "key" : "program,",
+  "value" : 10
+}
+{
+  "key" : "program.",
+  "value" : 10
+}
+{
+  "key" : "provide",
+  "value" : 5
+}
+{
+  "key" : "provided",
+  "value" : 5
+}
+{
+  "key" : "provides",
+  "value" : 20
+}
+{
+  "key" : "quality",
+  "value" : 5
+}
+{
+  "key" : "read",
+  "value" : 5
+}
+{
+  "key" : "reading",
+  "value" : 5
+}
+{
+  "key" : "reason",
+  "value" : 5
+}
+{
+  "key" : "record",
+  "value" : 5
+}
+{
+  "key" : "records",
+  "value" : 5
+}
+{
+  "key" : "reduce",
+  "value" : 25
+}
+{
+  "key" : "reducers,",
+  "value" : 5
+}
+{
+  "key" : "replace",
+  "value" : 5
+}
+{
+  "key" : "run",
+  "value" : 4
+}
+{
+  "key" : "same",
+  "value" : 10
+}
+{
+  "key" : "script",
+  "value" : 4
+}
+{
+  "key" : "section.",
+  "value" : 10
+}
+{
+  "key" : "seen",
+  "value" : 10
+}
+{
+  "key" : "serialization.",
+  "value" : 5
+}
+{
+  "key" : "set",
+  "value" : 10
+}
+{
+  "key" : "shell,",
+  "value" : 5
+}
+{
+  "key" : "shuffled",
+  "value" : 5
+}
+{
+  "key" : "similar",
+  "value" : 5
+}
+{
+  "key" : "similarly",
+  "value" : 5
+}
+{
+  "key" : "since",
+  "value" : 5
+}
+{
+  "key" : "so",
+  "value" : 25
+}
+{
+  "key" : "some",
+  "value" : 10
+}
+{
+  "key" : "specify",
+  "value" : 5
+}
+{
+  "key" : "standard",
+  "value" : 20
+}
+{
+  "key" : "state",
+  "value" : 5
+}
+{
+  "key" : "still",
+  "value" : 5
+}
+{
+  "key" : "store",
+  "value" : 10
+}
+{
+  "key" : "streams",
+  "value" : 5
+}
+{
+  "key" : "substring()",
+  "value" : 5
+}
+{
+  "key" : "supported.",
+  "value" : 5
+}
+{
+  "key" : "tarball",
+  "value" : 5
+}
+{
+  "key" : "temperature",
+  "value" : 25
+}
+{
+  "key" : "text,",
+  "value" : 5
+}
+{
+  "key" : "than",
+  "value" : 10
+}
+{
+  "key" : "that",
+  "value" : 50
+}
+{
+  "key" : "the",
+  "value" : 292
+}
+{
+  "key" : "their",
+  "value" : 4
+}
+{
+  "key" : "them",
+  "value" : 5
+}
+{
+  "key" : "then",
+  "value" : 5
+}
+{
+  "key" : "this",
+  "value" : 30
+}
+{
+  "key" : "through",
+  "value" : 5
+}
+{
+  "key" : "time",
+  "value" : 5
+}
+{
+  "key" : "to",
+  "value" : 107
+}
+{
+  "key" : "to.",
+  "value" : 5
+}
+{
+  "key" : "too.",
+  "value" : 4
+}
+{
+  "key" : "tools",
+  "value" : 10
+}
+{
+  "key" : "type",
+  "value" : 5
+}
+{
+  "key" : "type,",
+  "value" : 5
+}
+{
+  "key" : "types",
+  "value" : 10
+}
+{
+  "key" : "types,",
+  "value" : 5
+}
+{
+  "key" : "typically",
+  "value" : 10
+}
+{
+  "key" : "underlying",
+  "value" : 5
+}
+{
+  "key" : "up",
+  "value" : 4
+}
+{
+  "key" : "up.",
+  "value" : 4
+}
+{
+  "key" : "use",
+  "value" : 20
+}
+{
+  "key" : "used",
+  "value" : 11
+}
+{
+  "key" : "uses",
+  "value" : 15
+}
+{
+  "key" : "using",
+  "value" : 24
+}
+{
+  "key" : "value",
+  "value" : 20
+}
+{
+  "key" : "value,",
+  "value" : 5
+}
+{
+  "key" : "value.",
+  "value" : 5
+}
+{
+  "key" : "variable",
+  "value" : 4
+}
+{
+  "key" : "very",
+  "value" : 5
+}
+{
+  "key" : "virtual",
+  "value" : 4
+}
+{
+  "key" : "was",
+  "value" : 5
+}
+{
+  "key" : "we",
+  "value" : 50
+}
+{
+  "key" : "we've",
+  "value" : 1
+}
+{
+  "key" : "weï¿½ve",
+  "value" : 3
+}
+{
+  "key" : "where",
+  "value" : 5
+}
+{
+  "key" : "whether",
+  "value" : 5
+}
+{
+  "key" : "which",
+  "value" : 9
+}
+{
+  "key" : "will",
+  "value" : 5
+}
+{
+  "key" : "with",
+  "value" : 24
+}
+{
+  "key" : "work",
+  "value" : 5
+}
+{
+  "key" : "works",
+  "value" : 5
+}
+{
+  "key" : "worth",
+  "value" : 5
+}
+{
+  "key" : "wrapped",
+  "value" : 5
+}
+{
+  "key" : "write",
+  "value" : 30
+}
+{
+  "key" : "written",
+  "value" : 10
+}
+{
+  "key" : "year",
+  "value" : 5
+}
+{
+  "key" : "year,",
+  "value" : 5
+}
+{
+  "key" : "years,",
+  "value" : 5
+}
+{
+  "key" : "you",
+  "value" : 25
+}
+{
+  "key" : "your",
+  "value" : 24
+}
+0;cloudera@quickstart:~/workspace/AvroWordCount[cloudera@quickstart AvroWordCount]$ exit
+exit
+
+Script done on Sat 14 Mar 2026 07:52:42 AM PDT
